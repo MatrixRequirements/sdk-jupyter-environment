@@ -16,6 +16,11 @@ with:
 Run `npm install` in the `./work` directory in order to make sure the
 Matrix Requirements SDK is installed for use in your Jupyter Notebooks.
 
+Copy the file `credentials.json.TEMPLATE` to `credentials.json` and insert
+your own Matrix Instance servers and tokens. This way you can load
+the information into your Jupyter Notebook without saving tokens
+in the notebooks.
+
 To run the notebook, run `./start.sh` from this directory and open your
 browser with the link provided on the console. Be sure to save
 your notebooks in the `./work` subdirectory. If they are saved anywhere
@@ -31,6 +36,10 @@ following Javascript code:
 ```
 const sdk = require('matrix-requirements-sdk/server');
 ```
+
+The `./work/HelloMatrix.ipynb` Notebook is a good start. Load this and run
+the first cell, changing the name of the key in the credentials
+file from clouds5 to reference your own credentials key.
 
 # Reference
 
