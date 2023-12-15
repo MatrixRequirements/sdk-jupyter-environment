@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "matrix-requirements-sdk": "^2.4.0-alpha.17"
+  }
+}
